@@ -16,9 +16,17 @@ public abstract class Employee {
         return name;
     }
 
+
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+
     public void setName(String name) {
-        this.name = name;
+        if(name != null){
+            this.name = name;
+        }
     }
+    
 
     public int getNiNumber() {
         return niNumber;
@@ -37,16 +45,20 @@ public abstract class Employee {
         this.salary = salary;
     }
 
+//    public double raiseSalary(){
+//        this.salary += 10;
+//
+//        return salary;
+//    }
+
     public double raiseSalary(){
-        this.salary += 10;
-        return salary;
+        if (this.salary > 0) {
+        }
+        return this.salary += 10;
     }
 
-//    public double payBonus(){
-//        double bonus = (salary /= 100);
-//        return salary += bonus;
-//
-//    }
+
+
 
     public double payBonus(){
         double bonusedSalary = (salary *= 1.01);
