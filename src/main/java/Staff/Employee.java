@@ -26,7 +26,7 @@ public abstract class Employee {
             this.name = name;
         }
     }
-    
+
 
     public int getNiNumber() {
         return niNumber;

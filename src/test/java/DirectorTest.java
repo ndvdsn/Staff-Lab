@@ -23,7 +23,7 @@ public class DirectorTest {
 
     @Test
     public void hasNINumber(){
-        assertEquals(84, director.getNiNumber());
+        assertEquals(22, director.getNiNumber());
     }
 
     @Test
